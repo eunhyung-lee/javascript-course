@@ -22,6 +22,16 @@ ob.name << 호출
 ob["name"]; <<호출
 
 4. function
+function fncName(var){
+   console.log("Hello   ")
+    .....
+}
 
+ex) 
+function sayHello(nameOfPerson, age){
+    console.log("hi " + nameOfPerson);
+    console.log("you are " + age + " years old")
+}
+sayHello("운형", 26); 
 
 console.log(variable) << console에 출력
