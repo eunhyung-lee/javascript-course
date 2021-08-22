@@ -1,0 +1,27 @@
+1.variable
+
+const v     <<변형 불가
+let v   << 변형 가능
+
+type
+1, "a", true, false, null
+
+2. array
+
+const ar = [a,b,c,d] << 대괄호 사용
+ar.push("v") <<array에 variable 추가
+
+3. object (python의 dictionary)
+
+const ob = {
+    name:value,
+    point:value
+}; <<선언
+
+ob.name << 호출
+ob["name"]; <<호출
+
+4. function
+
+
+console.log(variable) << console에 출력
