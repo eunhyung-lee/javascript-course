@@ -44,3 +44,6 @@ console.log(player.name);
 player.sayHello("lee");
 
 console.log(variable) << console에 출력
+5. conditional (조건)
+typeof var<< variable type 확인
+parseInt(var) << convert string into int
