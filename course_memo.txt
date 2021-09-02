@@ -47,3 +47,16 @@ console.log(variable) << console에 출력
 5. conditional (조건)
 typeof var<< variable type 확인
 parseInt(var) << convert string into int
+isNaN(var) var이 number일 경우 false NaN 판별
+if (condition){
+    실행
+} else if (condition) {
+    실행
+}
+&& << and
+|| << or
+=== << same
+!== << not same
+
+6. javascript with Browser
+document.title << javascript로 html에 접근 가능 
