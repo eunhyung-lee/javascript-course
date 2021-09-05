@@ -10,5 +10,6 @@
 //     console.log("you should stop drinking")
 // }
 const title = document.getElementById("title");
+
 console.dir(title);
 title.innerText = "Got you!"
