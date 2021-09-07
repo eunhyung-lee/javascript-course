@@ -61,5 +61,10 @@ if (condition){
 6. javascript with Browser
 document.title << javascript로 html에 접근 가능 
 document.getElementById("title") << id를 통해 html을 가져온다.
+document.getElementByClassName("title") << class로 가져오기. 1개 반환
+document.getElementByName() << name으로가져옴. array반환
+document.getElementByTagName("title") << tagname으로 가져오기(h1, div etc). array 반환
+document.querySelector(".hello h1") << css로 가져온다. hello class안에 h1을 가져옴. return 1 element
+document.querySelectorAll(css) << css형식. return array
 console.dir("title") << title로 할 수 있는것들을 볼 수 있다.
 (ex title.className)

@@ -9,7 +9,9 @@
 // } else{
 //     console.log("you should stop drinking")
 // }
-const title = document.getElementById("title");
+// const title = document.getElementById("title");
 
-console.dir(title);
-title.innerText = "Got you!"
+// console.dir(title);
+// title.innerText = "Got you!"
+const title = document.getElementsByTagName("h1")
+console.log(title)
