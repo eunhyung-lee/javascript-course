@@ -13,5 +13,18 @@
 
 // console.dir(title);
 // title.innerText = "Got you!"
-const title = document.getElementsByTagName("h1")
-console.log(title)
+const title = document.querySelector("div h1");
+let n = 0;
+function handleTitleClick(){
+    n = n+1;
+    console.log(n);
+    if(n%2){
+        console.log("1");
+        title.style.color = "blue";
+    }
+    else{
+        console.log("0");
+        title.style.color="black";  
+    }
+}
+title.addEventListener("click",handleTitleClick);

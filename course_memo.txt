@@ -68,3 +68,10 @@ document.querySelector(".hello h1") << css로 가져온다. hello class안에 h1
 document.querySelectorAll(css) << css형식. return array
 console.dir("title") << title로 할 수 있는것들을 볼 수 있다.
 (ex title.className)
+ 
+ 7. Events << click, hover, enter 같은것
+const title = document.querySelector("div h1");
+function handleTitleClick(){
+    title.style.color = "blue";
+}
+title.addEventListener("click",handleTitleClick);
