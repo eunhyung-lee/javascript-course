@@ -75,3 +75,8 @@ function handleTitleClick(){
     title.style.color = "blue";
 }
 title.addEventListener("click",handleTitleClick);
+h1 html element mdn 검색, Web API << event 찾을 수 있는 페이지
+console.dir을 통해 event를 찾을 수 있음(on이 붙은)
+mouseenter<<mouse hover
+click < click
+mouseleave << mouse hover out

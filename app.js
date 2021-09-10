@@ -14,17 +14,19 @@
 // console.dir(title);
 // title.innerText = "Got you!"
 const title = document.querySelector("div h1");
-let n = 0;
-function handleTitleClick(){
-    n = n+1;
-    console.log(n);
-    if(n%2){
-        console.log("1");
-        title.style.color = "blue";
-    }
-    else{
-        console.log("0");
-        title.style.color="black";  
-    }
+const subTitle = document.querySelector(".hello:last-of-type");
+function handleMouseEnter(){
+    title.style.color = "blue"
+    title.innerText = "mouse enter"
 }
-title.addEventListener("click",handleTitleClick);
+function handleMouseLeave(){
+    title.innerText = "mouse leave"
+}
+function handleTitleClick(){
+    subTitle.innerText = "graped"
+}
+
+console.dir(subTitle)
+title.addEventListener("mouseenter", handleMouseEnter)
+title.addEventListener("mouseleave", handleMouseLeave)
+subTitle.addEventListener("click", handleTitleClick)
