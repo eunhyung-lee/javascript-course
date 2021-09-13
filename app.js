@@ -52,19 +52,32 @@
 // window.addEventListener("online",handleWindowOnline)
 // window.addEventListener("offline",handleWindowOffline)
 
+// const title = document.querySelector("div h1");
+// const subTitle = document.querySelector(".hello:last-of-type");
+// function handleTitleClick(){
+//     const currentColor = title.style.color;
+//     let newColor;
+    
+//     if (currentColor === "blue"){
+//         newColor = "tomato"
+//     }
+//     else{
+//         newColor = "blue"
+//     }
+//     title.style.color = newColor
+// }
+
+// title.addEventListener("click", handleTitleClick)
+
 const title = document.querySelector("div h1");
 const subTitle = document.querySelector(".hello:last-of-type");
 function handleTitleClick(){
-    const currentColor = title.style.color;
-    let newColor;
-    
-    if (currentColor === "blue"){
-        newColor = "tomato"
+    const clickedClass = "clicked"
+    if(title.className === clickedClass){
+        title.className = "";
+    } else{
+        title.className = clickedClass;
     }
-    else{
-        newColor = "blue"
-    }
-    title.style.color = newColor
 }
 
 title.addEventListener("click", handleTitleClick)
