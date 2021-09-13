@@ -15,37 +15,56 @@
 // title.innerText = "Got you!"
 
 
+// const title = document.querySelector("div h1");
+// const subTitle = document.querySelector(".hello:last-of-type");
+// function handleMouseEnter(){
+//     title.style.color = "blue"
+//     title.innerText = "mouse enter"
+// }
+// function handleMouseLeave(){
+//     title.innerText = "mouse leave"
+// }
+// function handleTitleClick(){
+//     console.log(subTitle.style.color)
+//     subTitle.style.color = "blue"
+//     console.log(subTitle.style.color)
+// }
+// function handleWindowResize(){
+//     document.body.style.backgroundColor = "wheat"
+// }
+// function handleWindwCopy(){
+//     alert("copy")
+// }
+// function handleWindowOffline(){
+//     alert ("WIFI Disconnected")
+// }
+// function handleWindowOnline(){
+//     alert("WIFI Connected")
+// }
+
+// console.dir(subTitle)
+// title.addEventListener("mouseenter", handleMouseEnter)
+// title.addEventListener("mouseleave", handleMouseLeave)
+// subTitle.addEventListener("click", handleTitleClick)
+// subTitle.onclick = handleTitleClick
+// window.addEventListener("resize", handleWindowResize)
+// window.addEventListener("copy", handleWindwCopy)
+// window.addEventListener("online",handleWindowOnline)
+// window.addEventListener("offline",handleWindowOffline)
+
 const title = document.querySelector("div h1");
 const subTitle = document.querySelector(".hello:last-of-type");
-function handleMouseEnter(){
-    title.style.color = "blue"
-    title.innerText = "mouse enter"
-}
-function handleMouseLeave(){
-    title.innerText = "mouse leave"
-}
 function handleTitleClick(){
-    subTitle.innerText = "graped"
-}
-function handleWindowResize(){
-    document.body.style.backgroundColor = "wheat"
-}
-function handleWindwCopy(){
-    alert("copy")
-}
-function handleWindowOffline(){
-    alert ("WIFI Disconnected")
-}
-function handleWindowOnline(){
-    alert("WIFI Connected")
+    const currentColor = title.style.color;
+    let newColor;
+    
+    if (currentColor === "blue"){
+        newColor = "tomato"
+    }
+    else{
+        newColor = "blue"
+    }
+    title.style.color = newColor
 }
 
-console.dir(subTitle)
-title.addEventListener("mouseenter", handleMouseEnter)
-title.addEventListener("mouseleave", handleMouseLeave)
- subTitle.addEventListener("click", handleTitleClick)
-subTitle.onclick = handleTitleClick
-window.addEventListener("resize", handleWindowResize)
-window.addEventListener("copy", handleWindwCopy)
-window.addEventListener("online",handleWindowOnline)
-window.addEventListener("offline",handleWindowOffline)
+title.addEventListener("click", handleTitleClick)
