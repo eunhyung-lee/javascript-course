@@ -73,11 +73,13 @@ const title = document.querySelector("div h1");
 const subTitle = document.querySelector(".hello:last-of-type");
 function handleTitleClick(){
     const clickedClass = "clicked"
-    if(title.className === clickedClass){
-        title.className = "";
-    } else{
-        title.className = clickedClass;
-    }
+    // if(title.classList.contains(clickedClass)){
+    //     title.classList.remove(clickedClass) ;
+    // } else{
+    //     title.classList.add(clickedClass)
+    // }
+
+    title.classList.toggle("clicked")
 }
 
 title.addEventListener("click", handleTitleClick)
