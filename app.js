@@ -69,17 +69,19 @@
 
 // title.addEventListener("click", handleTitleClick)
 
-const title = document.querySelector("div h1");
-const subTitle = document.querySelector(".hello:last-of-type");
-function handleTitleClick(){
-    const clickedClass = "clicked"
+// const title = document.querySelector("div h1");
+// const subTitle = document.querySelector(".hello:last-of-type");
+// function handleTitleClick(){
+//     const clickedClass = "clicked"
     // if(title.classList.contains(clickedClass)){
     //     title.classList.remove(clickedClass) ;
     // } else{
     //     title.classList.add(clickedClass)
     // }
 
-    title.classList.toggle("clicked")
-}
+    // title.classList.toggle("clicked")
+// }
 
-title.addEventListener("click", handleTitleClick)
+// title.addEventListener("click", handleTitleClick)
+
+const handlTag = document.querySelector()
